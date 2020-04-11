@@ -7,309 +7,303 @@ border-radius - 1.3em
 dark blue - #0a004b
 */
 @font-face {
-    font-family: "Mabry Pro Black";
-    src: url("./fonts/341e27032d2425bbb38e134289df92e8.eot");
+  font-family: "Mabry Pro Black";
+  src: url("./fonts/341e27032d2425bbb38e134289df92e8.eot");
 
-    src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"),
-
-        url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"),
-
-        url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"),
-
-        url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black") format("svg");
-
+  src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"),
+    url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"),
+    url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"),
+    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black")
+      format("svg");
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Mabry Pro Black',
-        sans-serif;
-    overflow-x: hidden;
-    background-color: #f1f2f8;
+  font-family: "Mabry Pro Black", sans-serif;
+  overflow-x: hidden;
+  background-color: #f1f2f8;
 }
 
 .indigo-head {
-    background: #5366e0;
-    width: 100%;
-    height: 160vh;
+  background: #5366e0;
+  width: 100%;
+  height: 160vh;
 }
 
 .bg-lines {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    height: 100%;
-    flex-direction: row;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  flex-direction: row;
 }
 
 .line {
-    border-right: 1px solid #6678eb;
-    width: 20%;
-    height: 100%;
+  border-right: 1px solid #6678eb;
+  width: 20%;
+  height: 100%;
 }
 
 .bottom-img {
-    margin-top: -300px;
+  margin-top: -300px;
 }
 
 .nav-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 80px;
-    position: absolute;
-    top: 0;
-    width: 96%;
-    margin: auto;
-
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  width: 96%;
+  margin: auto;
 }
 
 .org-button {
-    color: white;
-    background: #ff5d5d;
-    border-radius: 100px;
-    width: 50px;
-    font-size: 2em;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s;
+  color: white;
+  background: #ff5d5d;
+  border-radius: 100px;
+  width: 50px;
+  font-size: 2em;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
 }
 
 .title {
-    color: #fff;
+  color: #fff;
 
-    font-size: 9em;
+  font-size: 9em;
 }
 
 .title-con {
-    position: absolute;
-    top: 30%;
-    left: 10%;
+  position: absolute;
+  top: 30%;
+  left: 10%;
 }
 
 .org-button:hover {
-    cursor: pointer;
-    width: 52px;
-    font-size: 1.8em;
-    background-color: #fd6c6c;
-    height: 52px;
+  cursor: pointer;
+  width: 52px;
+  font-size: 1.8em;
+  background-color: #fd6c6c;
+  height: 52px;
 }
 
 .sub-text {
-    color: white;
-    margin-top: -30px;
-    font-size: 2em;
-    margin-left: 10px;
+  color: white;
+  margin-top: -30px;
+  font-size: 2em;
+  margin-left: 10px;
 }
 
 .sub-content {
-    color: white;
-    display: flex;
-    flex-direction: row;
+  color: white;
+  display: flex;
+  flex-direction: row;
 }
 
 .disk-1 {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    border-radius: 50%;
-    background: none;
-    border: #ff5d5d 300px solid;
-    margin: 10px;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+  border: #ff5d5d 300px solid;
+  margin: 10px;
 }
 
 .lid {
-    width: 45%;
-    margin-top: 90px;
+  width: 45%;
+  margin-top: 90px;
 }
 
 .red {
-    color: #ff5d5d;
+  color: #ff5d5d;
 }
 
 .content-text {
-    font-weight: 600;
-    font-size: 1.5em;
-    font-family: Source Sans Pro;
+  font-weight: 600;
+  font-size: 1.5em;
+  font-family: Source Sans Pro;
 }
 
 .sub-text-2 {
-    color: white;
-    margin-left: 10px;
-    margin-top: 5px;
-    font-size: 3em;
+  color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 3em;
 }
 
 .conatiner {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 .flex {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
-    flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .white {
-    color: white;
-    font-size: 1.5em;
-    margin-right: 10px;
+  color: white;
+  font-size: 1.5em;
+  margin-right: 10px;
 }
 
 .contract-title {
-    color: #0a004b;
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-thickness: 10px;
+  color: #0a004b;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
 }
 
 .con-1 {
-    width: 48%;
-    margin-right: 20px;
+  width: 48%;
+  margin-right: 20px;
 }
 
 .con-2 {
-    width: 50%;
-    margin-left: 20px;
+  width: 50%;
+  margin-left: 20px;
 }
 
 .footer {
-    margin-top: 150px;
-    display: flex;
-    justify-content: center;
-    color: #5366e0;
-    height: 50px;
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  color: #5366e0;
+  height: 50px;
 }
 
 .card {
-
-    border: .1rem solid rgba(10, 0, 75, .1);
-    background: #fff;
-    border-radius: 10px;
-    padding: 50px;
-    transition: 0.5s;
+  border: 0.1rem solid rgba(10, 0, 75, 0.1);
+  background: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  transition: 0.5s;
 }
 
 .card:hover {
-    cursor: pointer;
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
 }
 
 .card-title {
-    color: #0a004b;
+  color: #0a004b;
 }
 
 .card-content {
-    margin-top: 30px;
-    color: rgb(168, 168, 168);
-    font-family: Source Sans Pro;
-    font-weight: 600;
+  margin-top: 30px;
+  color: rgb(168, 168, 168);
+  font-family: Source Sans Pro;
+  font-weight: 600;
 }
 
 .green-btn {
-    padding: 10px;
-    color: white;
-    width: auto;
-    background: #05ddb9;
-    width: 100px;
-    margin-top: 50px;
-    border-radius: 7px;
+  padding: 10px;
+  color: white;
+  width: auto;
+  background: #05ddb9;
+  width: 100px;
+  margin-top: 50px;
+  border-radius: 7px;
 }
 
 .green-btn:hover {
-    background: #38e4c7;
+  background: #38e4c7;
 }
 
-@media (max-width:800px) {
-    .contract-title {
-        margin-top: 100px;
-    }
+@media (max-width: 800px) {
+  .contract-title {
+    margin-top: 100px;
+  }
 
-    .indigo-head {
-        height: 120vh;
-    }
+  .indigo-head {
+    height: 120vh;
+  }
 
-    .bottom-img {
-        max-width: 300%;
-        margin-left: -100px;
-    }
+  .bottom-img {
+    max-width: 300%;
+    margin-left: -100px;
+  }
 
-    .main {
-        margin-top: -100px;
-    }
+  .main {
+    margin-top: -100px;
+  }
 
-    .con-1 {
-        width: 100%;
-        margin: 0;
-    }
+  .con-1 {
+    width: 100%;
+    margin: 0;
+  }
 
-    .con-2 {
-        width: 100%;
-        margin: 0;
-    }
+  .con-2 {
+    width: 100%;
+    margin: 0;
+  }
 
-    .card {
-        margin-top: 20px;
-    }
+  .card {
+    margin-top: 20px;
+  }
 
-    .footer {
-        margin-top: 50px;
-    }
+  .footer {
+    margin-top: 50px;
+  }
 
-    .lid {
-        margin-top: 80px;
-        width: 86%;
-        text-align: right;
-    }
+  .lid {
+    margin-top: 80px;
+    width: 86%;
+    text-align: right;
+  }
 
-    .line {
-        width: 33%;
-    }
+  .line {
+    width: 33%;
+  }
 
-    .no-mobile {
-        display: none;
-    }
+  .no-mobile {
+    display: none;
+  }
 
-    .sub-text {
-        font-size: 1em;
-        margin-top: 0px;
-        margin-left: 2px;
-    }
+  .sub-text {
+    font-size: 1em;
+    margin-top: 0px;
+    margin-left: 2px;
+  }
 
-    .title {
-        font-size: 2.7em;
-    }
+  .title {
+    font-size: 2.7em;
+  }
 
-    .disk-1 {
-        border: #ff5d5d 156px solid;
-        background-color: #ff5d5d;
-        margin: 0;
-        top: -9%;
-        left: -20%;
-    }
+  .disk-1 {
+    border: #ff5d5d 156px solid;
+    background-color: #ff5d5d;
+    margin: 0;
+    top: -9%;
+    left: -20%;
+  }
 
-    .content-text {
-        font-size: 1em;
-        font-weight: 400;
-    }
+  .content-text {
+    font-size: 1em;
+    font-weight: 400;
+  }
 
-    .sub-text-2 {
-        font-size: 1.2em;
-        margin: 0;
-    }
+  .sub-text-2 {
+    font-size: 1.2em;
+    margin: 0;
+  }
 
-    .title2 {
-        font-size: 1.5em;
-    }
+  .title2 {
+    font-size: 1.5em;
+  }
 }
