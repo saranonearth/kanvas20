@@ -9,7 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+    <script type="text/javascript">
+        (function () {
+            var css = document.createElement('link');
+            css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+            css.rel = 'stylesheet';
+            css.type = 'text/css';
+            document.getElementsByTagName('head')[0].appendChild(css);
+        })();
+    </script>
     <!-- Style -->
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -29,6 +37,8 @@
                 <div><i class="fab fa-facebook-square"></i></div>
                 <div><i class="fab fa-instagram"></i></div>
             </div>
+            <div class="disk-2"></div>
+
             <div class="sub-content">
                 <div class="no-mobile lid"></div>
                 <div class="lid rellax" data-rellax-mobile-speed="5" data-rellax-desktop-speed="7">
@@ -57,11 +67,12 @@
             <div class="org-button animated zoomIn">+</div>
         </nav>
     </header>
-
+    <div class="disk-3 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
     <div>
         <img src="./bottom.png" class="bottom-img" alt="bottom-curve">
     </div>
     <main class="main">
+        <div class="disk-4 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
         <h1 class="contract-title rellax" data-rellax-speed="1">Events</h1>
         <div class="container">
             <div class="flex">
@@ -73,7 +84,7 @@
                             impedit, iure qui, laboriosam sint ad dolor natus dolore voluptates cumque excepturi ipsam
                             explicabo vitae velit saepe. lorem</p>
 
-                        <p class="green-btn">
+                        <p class="green-btn sd wd">
                             More info.
                         </p>
                     </div>
@@ -86,8 +97,74 @@
                             laborum perferendis
                             impedit, iure qui, laboriosam sint ad dolor natus dolore voluptates cumque excepturi ipsam
                             explicabo vitae velit saepe. lorem</p>
-                        <div class="green-btn">
+                        <div class="green-btn sd gd">
                             More info.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="cont">
+                    <div id="back1" class="green-btn sd back">
+                        ← Back </div>
+
+                    <div class="card">
+                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
+                        <p class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero
+                            voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci
+                            repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat.
+                            Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Placeat omnis sit optio ab voluptas consectetur
+                            error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa,
+                            maxime dolore sint.</p>
+                        <br>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <br>
+                        <p>Coordinator</p>
+                        <div class="con-flex">
+                            <div><img class="user-icon" src="https://via.placeholder.com/150" alt=""></div>
+                            <div>
+                                <p class="con-t">Name</p>
+                                <p class="con-t">98565 58965</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-2">
+                <div class="cont">
+                    <div id="back2" class="green-btn sd back">
+                        ← Back </div>
+
+                    <div class="card">
+                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
+                        <p class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero
+                            voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci
+                            repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                            adipisicing elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat.
+                            Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Placeat omnis sit optio ab voluptas consectetur
+                            error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa,
+                            maxime dolore sint.</p>
+                        <br>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <br>
+                        <p>Coordinator</p>
+                        <div class="con-flex">
+                            <div><img class="user-icon" src="https://via.placeholder.com/150" alt=""></div>
+                            <div>
+                                <p class="con-t">Name</p>
+                                <p class="con-t">98565 58965</p>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -98,9 +175,10 @@
     <footer class="footer">
         <div class="center"> developed with ❤️ by gawds</div>
     </footer>
-    <script src="https://kit.fontawesome.com/e19e904283.js" crossorigin="anonymous"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
         integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/e19e904283.js" crossorigin="anonymous"></script> -->
     <script src="./script.js"></script>
 </body>
 
