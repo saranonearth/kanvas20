@@ -8,21 +8,25 @@
     <!-- CDN -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap"
         rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> -->
     <!-- Style -->
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header class="indigo-head">
-        <div class="disk-1"></div>
+        <div class="animated zoomIn disk-1 rellax" data-rellax-mobile-speed="2" data-rellax-desktop-speed="-6"></div>
         <div class="title-con">
-            <h1 class="title">KANVAS <span class="red">'20</span></h1>
-            <p class="sub-text">An event by gawds</p>
-            <p class="sub-text-2">Registration starts in <span class="red">3d 12h 32m</span></p>
+            <h1 class="title animated fadeIn rellax delay-3s" data-rellax-speed="2">KANVAS <span class="red">'20</span>
+            </h1>
+            <p class="sub-text animated fadeIn delay-1s">An event by gawds</p>
+            <p class="sub-text-2 animated fadeIn delay-2s">Registration starts in <span class="red">3d 12h 32m</span>
+            </p>
             <div class="sub-content">
                 <div class="no-mobile lid"></div>
-                <div class="lid">
-                    <h1 class="title2">What is Kanvas?</h1>
+                <div class="lid rellax animated fadeInRight delay-4s" data-rellax-mobile-speed="5"
+                    data-rellax-desktop-speed="7">
+                    <h1 class="title2">What is <span class="red">Kanvas</span>? </h1>
                     <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, temporibus
                         officiis perferendis
                         aliquam consequatur earum ipsa nobis illum, laboriosam deserunt deleniti. Natus velit ratione
@@ -43,8 +47,8 @@
             <div class="line no-mobile"></div>
         </div>
         <nav class="nav-flex">
-            <div class="white">gawds/kanvas</div>
-            <div class="org-button">+</div>
+            <div class="white animated fadeInLeft delay-1s">gawds/kanvas</div>
+            <div class="org-button animated zoomIn">+</div>
         </nav>
     </header>
 
@@ -52,11 +56,11 @@
         <img src="./bottom.png" class="bottom-img" alt="bottom-curve">
     </div>
     <main class="main">
-        <h1 class="contract-title">Events</h1>
+        <h1 class="contract-title rellax" data-rellax-speed="1">Events</h1>
         <div class="container">
             <div class="flex">
                 <div class="con-1">
-                    <div class="card">
+                    <div class="card ">
                         <h1 class="card-title">Web Dev.</h1>
                         <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in quis
                             laborum perferendis
@@ -70,7 +74,7 @@
 
                 </div>
                 <div class="con-1">
-                    <div class="card">
+                    <div class="card rellax">
                         <h1 class="card-title">Graphics Design.</h1>
                         <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in quis
                             laborum perferendis
@@ -88,6 +92,9 @@
     <footer class="footer">
         <div class="center"> developed with ❤️ by gawds</div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+        integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
 

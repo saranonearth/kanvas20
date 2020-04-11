@@ -26,6 +26,10 @@ dark blue - #0a004b
     margin: 0;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Mabry Pro Black',
         sans-serif;
@@ -165,6 +169,7 @@ body {
     color: white;
     font-size: 1.5em;
     margin-right: 10px;
+
 }
 
 .contract-title {
@@ -232,6 +237,10 @@ body {
 }
 
 @media (max-width:800px) {
+    .white {
+        font-size: 1em;
+    }
+
     .contract-title {
         margin-top: 100px;
     }
