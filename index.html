@@ -63,7 +63,7 @@
             <div class="line no-mobile"></div>
         </div>
         <nav class="nav-flex">
-            <div class="white animated fadeInLeft delay-1s">gawds/kanvas</div>
+            <div class="white animated fadeInLeft delay-1s">submit</div>
             <div class="org-button animated zoomIn">+</div>
         </nav>
     </header>
@@ -73,7 +73,7 @@
     </div>
     <main class="main">
         <div class="disk-4 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
-        <h1 class="contract-title rellax" data-rellax-speed="1">Events</h1>
+        <h1 id="events" class="contract-title rellax" data-rellax-speed="1">Events</h1>
         <div class="container">
             <div class="flex">
                 <div class="con-1">
@@ -105,7 +105,7 @@
             </div>
             <div class="flex-1">
                 <div class="cont">
-                    <div id="back1" class="green-btn sd back">
+                    <div id="back1" onclick="back()" class="green-btn sd back">
                         ← Back </div>
 
                     <div class="card">
@@ -138,7 +138,7 @@
             </div>
             <div class="flex-2">
                 <div class="cont">
-                    <div id="back2" class="green-btn sd back">
+                    <div id="back2" onclick="back()" class="green-btn sd back">
                         ← Back </div>
 
                     <div class="card">
@@ -165,6 +165,52 @@
                             </div>
 
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-3">
+                <div class="cont">
+                    <div onclick="back()" class="green-btn sd back">
+                        ← Back </div>
+
+                    <div class="card">
+
+                        <div class="form">
+                            <h1 class="card-title">Submit your entry🔥</h1>
+                            <div class="form-item">
+                                <label for="name">Name</label> <br>
+                                <input type="text" name="name">
+                            </div>
+                            <div class="form-item">
+                                <label for="email">E-Mail Addredd</label><br>
+                                <input type="email" name="email">
+                            </div>
+                            <div class="form-item">
+                                <label for="phone">Mobile Number</label><br>
+                                <input type="text" name="phone">
+                            </div>
+                            <div class="form-item">
+                                <label for="college">College</label><br>
+                                <input type="text" name="college">
+                            </div>
+                            <div class="form-item">
+                                <label for="category">Category</label><br>
+                                <select id="category" name="cat">
+                                    <option value="webdev">Web Development</option>
+                                    <option value="graphics">Graphic Design</option>
+
+                                </select>
+                            </div>
+                            <div class="form-item">
+                                <label for="url">Entry Url</label><br>
+                                <input type="text" name="url">
+                            </div>
+                            <p class="card-content mt-no">Repo url if Web Dev or Google drive link containing the
+                                graphic files.</p>
+                            <div class="form-item">
+                                <button class="green-btn sd" type="submit">Submit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
