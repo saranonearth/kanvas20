@@ -38,7 +38,8 @@ SUB_button.addEventListener('click', () => {
     WD.style.display = 'none';
     SUB.style.display = 'block';
     events_heading.style.display = 'none'
-    if (window.screen.width * window.devicePixelRatio < 650) {
+    console.log(window.screen.width * window.devicePixelRatio)
+    if (window.screen.width * window.devicePixelRatio < 800) {
         window.scrollTo(600, 600);
     } else {
         window.scrollTo(950, 950);
@@ -48,7 +49,7 @@ SUB_button.addEventListener('click', () => {
 const back = () => {
     main.style.display = 'flex';
     WD.style.display = 'none';
-    events_heading.display = 'block'
+    events_heading.style.display = 'block'
     GD.style.display = 'none';
     SUB.style.display = 'none';
 }
