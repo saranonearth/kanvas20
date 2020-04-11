@@ -1,4 +1,5 @@
 # kanvas20
+![demo](http://i.imgur.com/JQ05ifv.png)
 
 To Expand: 
 - Implement parallax effect using [Rellax js](https://dixonandmoe.com/rellax/)
