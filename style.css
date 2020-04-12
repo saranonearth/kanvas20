@@ -13,8 +13,7 @@ dark blue - #0a004b
   src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"),
-    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black")
-      format("svg");
+    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black") format("svg");
 }
 
 * {
@@ -60,13 +59,23 @@ body {
 
 .nav-flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   position: absolute;
   top: 0;
   width: 96%;
   margin: auto;
+}
+
+.f1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gawds-logo {
+  width: 120px;
 }
 
 .org-button {
@@ -163,6 +172,7 @@ body {
 .lid {
   width: 45%;
   margin-top: 90px;
+  z-index: 10 !important;
 }
 
 .red {
@@ -171,7 +181,7 @@ body {
 
 .content-text {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Source Sans Pro;
 }
 
@@ -242,6 +252,7 @@ body {
   border-radius: 10px;
   padding: 50px;
   transition: 0.5s;
+
 }
 
 .con-flex {
@@ -286,7 +297,7 @@ body {
   color: white;
   width: auto;
   background: #05ddb9;
-  width: 100px;
+  width: 200px;
   margin-top: 50px;
   border-radius: 7px;
 }
@@ -343,18 +354,78 @@ select {
   color: #696969;
   text-align: center;
 }
-.message {
-  margin-top: 10px;
-}
 
 .flex-3 {
   display: none;
 }
-.g-f {
+
+.text-dec-none {
   text-decoration: none;
-  color: #6678eb !important;
 }
+
+.slack {
+  position: fixed;
+  z-index: 11 !important;
+  bottom: 20px;
+  right: 15px;
+  background: #05ddb9;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+  color: #0a004b;
+  font-size: 0.8em;
+  transition: 0.2s;
+}
+
+.flex-it {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.slack:hover {
+  background: #4bdbc3;
+  cursor: pointer;
+}
+
+.join-s {
+  margin-left: -8px;
+  text-decoration: none !important;
+  color: #0a004b;
+}
+
+.i-slack {
+  color: #0a004b !important;
+
+}
+
+.ft {
+  font-size: 0.8em;
+  width: 150px;
+}
+
+.f-link {
+  text-decoration: none;
+  color: #5366e0;
+}
+
+.content-text {
+  font-size: 1.3em;
+}
+
 @media (max-width: 800px) {
+  .join-s {
+    font-size: 0.8em;
+  }
+
+  .gawds-logo {
+    width: 90px;
+  }
+
   .white {
     font-size: 1em;
   }
@@ -470,6 +541,7 @@ select {
     border: #fd6c6c 55px solid;
     margin: 10px;
     top: 100%;
+    z-index: 0;
   }
 
   .cont {
@@ -503,5 +575,30 @@ select {
   .back {
     color: #0a004b;
     background-color: #38e4c7;
+  }
+
+  .ft {
+    font-size: 0.8em;
+    width: 150px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .flex {
+    width: 90%;
+  }
+
+  .title2 {
+    font-size: 1.2em;
+  }
+
+  .content-text {
+    font-size: 0.9em;
+  }
+
+  .card-content {
+    font-size: 0.9em;
   }
 }
