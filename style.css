@@ -370,6 +370,7 @@ select {
   right: 15px;
   background: #05ddb9;
   padding: 5px;
+  padding-right: 15px;
   border-radius: 10px;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
   color: #0a004b;
