@@ -1,231 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanvas '20</title>
     <!-- CDN -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
     <script type="text/javascript">
-        (function () {
-            var css = document.createElement('link');
-            css.href = 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-            css.rel = 'stylesheet';
-            css.type = 'text/css';
-            document.getElementsByTagName('head')[0].appendChild(css);
-        })();
+      (function () {
+        var css = document.createElement("link");
+        css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
     </script>
     <!-- Style -->
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="Kanvas '20.ico" />
+  </head>
 
-<body>
+  <body>
+    <div class="slack animated zoomIn">
+      <a
+        class="text-dec-none"
+        href="https://kanvas20.slack.com/join/shared_invite/zt-dfyijily-UQgwE~qb8zgpVB8IPUokjQ"
+        target="_blank"
+      >
+        <div class="flex-it">
+          <div><i class="fab i-slack fa-slack"></i></div>
+          <div class="center-v">
+            <span class="join-s">Join our slack</span>
+          </div>
+        </div>
+      </a>
+    </div>
     <header class="indigo-head">
-        <div class="animated zoomIn disk-1 rellax" data-rellax-mobile-speed="2" data-rellax-desktop-speed="-6"></div>
-        <div class="title-con">
-            <h1 class="title animated fadeIn rellax delay-3s" data-rellax-speed="2">KANVAS <span class="red">'20</span>
-            </h1>
-            <p class="sub-text animated fadeIn delay-1s">An event by gawds</p>
-            <p class="sub-text-2 animated fadeIn delay-2s">Registration starts in <span id="timer" class="red"></span>
+      <div
+        class="animated zoomIn disk-1 rellax"
+        data-rellax-mobile-speed="2"
+        data-rellax-desktop-speed="-6"
+      ></div>
+      <div class="title-con">
+        <h1 class="title animated fadeIn rellax delay-3s" data-rellax-speed="2">
+          KANVAS <span class="red">'20</span>
+        </h1>
+        <p class="sub-text animated fadeIn delay-1s">An event by gawds</p>
+        <p class="sub-text-2 animated fadeIn delay-2s">
+          Registration starts in <span id="timer" class="red"></span>
+        </p>
+        <div class="social-icons animated fadeIn delay-4s">
+          <div>
+            <a href="https://github.com/gawdsnitkkr" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+
+          <div>
+            <a href="https://www.facebook.com/gawdsnitkkr/" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/_gawds/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="disk-2"></div>
+
+        <div class="sub-content">
+          <div class="no-mobile lid"></div>
+          <div
+            class="lid rellax"
+            data-rellax-mobile-speed="5"
+            data-rellax-desktop-speed="7"
+          >
+            <h1 class="title2">What is <span class="red">Kanvas</span>?</h1>
+            <p class="content-text">
+              Bored of sitting at home during quarantine? Tired of being cooped
+              up and not being able to go out? We bring to you the perfect way
+              to use this spare time productively. GAWDS presents to you,
+              Kanvas'20, a platform for all you web and graphics geeks to
+              showcase your talents.<br /><br />
+              So let the gears in your brain churn and your creative juices flow
+              freely, and come up with something that will blow our minds!
             </p>
-            <div class="social-icons animated fadeIn delay-4s">
-                <div><i class="fab fa-github-square"></i></div>
-                <div><i class="fab fa-slack"></i></div>
-                <div><i class="fab fa-facebook-square"></i></div>
-                <div><i class="fab fa-instagram"></i></div>
-            </div>
-            <div class="disk-2"></div>
-
-            <div class="sub-content">
-                <div class="no-mobile lid"></div>
-                <div class="lid rellax" data-rellax-mobile-speed="5" data-rellax-desktop-speed="7">
-                    <h1 class="title2">What is <span class="red">Kanvas</span>? </h1>
-                    <p class="content-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, temporibus
-                        officiis perferendis
-                        aliquam consequatur earum ipsa nobis illum, laboriosam deserunt deleniti. Natus velit ratione
-                        quidem alias recusandae repudiandae eveniet esse! Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Dolore quidem nisi possimus distinctio</p>
-
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="bg-lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line no-mobile"></div>
-            <div class="line no-mobile"></div>
-            <div class="line no-mobile"></div>
-            <div class="line no-mobile"></div>
-            <div class="line no-mobile"></div>
+      </div>
+      <div class="bg-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+      </div>
+      <nav class="nav-flex">
+        <div>
+          <a href="http://gawds.in" target="_blank"
+            ><img src="./gawds.png" class="gawds-logo"
+          /></a>
         </div>
-        <nav class="nav-flex">
-            <div class="white animated fadeInLeft delay-1s">submit</div>
-            <div class="org-button animated zoomIn">+</div>
-        </nav>
+        <div class="f1">
+          <div class="white animated fadeInLeft delay-1s">gawds/kanvas</div>
+          <div class="org-button animated zoomIn">+</div>
+        </div>
+      </nav>
     </header>
-    <div class="disk-3 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
+    <div
+      class="disk-3 rellax"
+      data-rellax-mobile-speed="-5"
+      data-rellax-desktop-speed="2"
+    ></div>
     <div>
-        <img src="./bottom.png" class="bottom-img" alt="bottom-curve">
+      <img src="./bottom.png" class="bottom-img" alt="bottom-curve" />
     </div>
     <main class="main">
-        <div class="disk-4 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
-        <h1 id="events" class="contract-title rellax" data-rellax-speed="1">Events</h1>
-        <div class="container">
-            <div class="flex">
-                <div class="con-1">
-                    <div class="card">
-                        <h1 class="card-title">Web Dev.</h1>
-                        <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in quis
-                            laborum perferendis
-                            impedit, iure qui, laboriosam sint ad dolor natus dolore voluptates cumque excepturi ipsam
-                            explicabo vitae velit saepe. lorem</p>
+      <div
+        class="disk-4 rellax"
+        data-rellax-mobile-speed="-5"
+        data-rellax-desktop-speed="2"
+      ></div>
+      <h1 id="events" class="contract-title rellax" data-rellax-speed="1">
+        Events
+      </h1>
+      <div class="container">
+        <div class="flex">
+          <div class="con-1">
+            <div class="card">
+              <h1 class="card-title">Web Dev.</h1>
+              <p class="card-content">
+                "Intuitive Web Development is how we give users new
+                superpowers." - Jared Spool<br /><br />
+                Put your thinking caps on, and create a website that is usable
+                as well as aesthetically appealing. Participate in the Web
+                Development competition, and stand a chance to win exciting
+                prizes!
+              </p>
 
-                        <p class="green-btn sd wd">
-                            More info.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="con-1">
-                    <div class="card ">
-                        <h1 class="card-title">Graphics Design.</h1>
-                        <p class="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus in quis
-                            laborum perferendis
-                            impedit, iure qui, laboriosam sint ad dolor natus dolore voluptates cumque excepturi ipsam
-                            explicabo vitae velit saepe. lorem</p>
-                        <div class="green-btn sd gd">
-                            More info.
-                        </div>
-                    </div>
-                </div>
+              <p class="green-btn ft sd wd">
+                Theme Coming Soon.
+              </p>
             </div>
-            <div class="flex-1">
-                <div class="cont">
-                    <div id="back1" onclick="back()" class="green-btn sd back">
-                        ← Back </div>
-
-                    <div class="card">
-                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
-                        <p class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero
-                            voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci
-                            repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat.
-                            Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Placeat omnis sit optio ab voluptas consectetur
-                            error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa,
-                            maxime dolore sint.</p>
-                        <br>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <br>
-                        <p>Coordinator</p>
-                        <div class="con-flex">
-                            <div><img class="user-icon" src="https://via.placeholder.com/150" alt=""></div>
-                            <div>
-                                <p class="con-t">Name</p>
-                                <p class="con-t">98565 58965</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="con-1">
+            <div class="card">
+              <h1 class="card-title">Graphics Design.</h1>
+              <p class="card-content">
+                “Good design is all about making other designers feel like
+                idiots because that idea wasn’t theirs.” - Frank Chimero<br /><br />
+                It's time for you to put your skills to test and create a visual
+                masterpiece. Participate in the Graphic Design competition, and
+                stand a chance to win exciting prizes!
+              </p>
+              <div class="green-btn ft sd gd">
+                Theme Coming Soon.
+              </div>
             </div>
-            <div class="flex-2">
-                <div class="cont">
-                    <div id="back2" onclick="back()" class="green-btn sd back">
-                        ← Back </div>
-
-                    <div class="card">
-                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
-                        <p class="card-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero
-                            voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci
-                            repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur
-                            adipisicing elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat.
-                            Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum
-                            dolor sit amet consectetur adipisicing elit. Placeat omnis sit optio ab voluptas consectetur
-                            error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa,
-                            maxime dolore sint.</p>
-                        <br>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <br>
-                        <p>Coordinator</p>
-                        <div class="con-flex">
-                            <div><img class="user-icon" src="https://via.placeholder.com/150" alt=""></div>
-                            <div>
-                                <p class="con-t">Name</p>
-                                <p class="con-t">98565 58965</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-3">
-                <div class="cont">
-                    <div onclick="back()" class="green-btn sd back">
-                        ← Back </div>
-
-                    <div class="card">
-
-                        <div class="form">
-                            <h1 class="card-title">Submit your entry🔥</h1>
-                            <div class="form-item">
-                                <label for="name">Name</label> <br>
-                                <input type="text" name="name">
-                            </div>
-                            <div class="form-item">
-                                <label for="email">E-Mail Addredd</label><br>
-                                <input type="email" name="email">
-                            </div>
-                            <div class="form-item">
-                                <label for="phone">Mobile Number</label><br>
-                                <input type="text" name="phone">
-                            </div>
-                            <div class="form-item">
-                                <label for="college">College</label><br>
-                                <input type="text" name="college">
-                            </div>
-                            <div class="form-item">
-                                <label for="category">Category</label><br>
-                                <select id="category" name="cat">
-                                    <option value="webdev">Web Development</option>
-                                    <option value="graphics">Graphic Design</option>
-
-                                </select>
-                            </div>
-                            <div class="form-item">
-                                <label for="url">Entry Url</label><br>
-                                <input type="text" name="url">
-                            </div>
-                            <p class="card-content mt-no">Repo url if Web Dev or Google drive link containing the
-                                graphic files.</p>
-                            <div class="form-item">
-                                <button class="green-btn sd" type="submit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="flex-1">
+          <div class="cont">
+            <div id="back1" onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
 
+            <div class="card">
+              <h1 class="card-title">Lorem, ipsum dolor.</h1>
+              <p class="card-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                vero voluptates suscipit earum deleniti natus neque quae facere
+                aperiam iure, quasi adipisci repellendus ipsum quis nisi eos,
+                in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Aliquam dicta quis vitae rerum architecto
+                voluptatibus magni fugiat. Facere odio, error sunt ut delectus
+                culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Placeat omnis sit optio ab
+                voluptas consectetur error nemo repudiandae rerum voluptates? At
+                itaque ratione accusamus velit suscipit culpa, maxime dolore
+                sint.
+              </p>
+              <br />
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <br />
+              <p>Coordinator</p>
+              <div class="con-flex">
+                <div>
+                  <img
+                    class="user-icon"
+                    src="https://via.placeholder.com/150"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="con-t">Name</p>
+                  <p class="con-t">98565 58965</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-2">
+          <div class="cont">
+            <div id="back2" onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
+
+            <div class="card">
+              <h1 class="card-title">Lorem, ipsum dolor.</h1>
+              <p class="card-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                vero voluptates suscipit earum deleniti natus neque quae facere
+                aperiam iure, quasi adipisci repellendus ipsum quis nisi eos,
+                in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Aliquam dicta quis vitae rerum architecto
+                voluptatibus magni fugiat. Facere odio, error sunt ut delectus
+                culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Placeat omnis sit optio ab
+                voluptas consectetur error nemo repudiandae rerum voluptates? At
+                itaque ratione accusamus velit suscipit culpa, maxime dolore
+                sint.
+              </p>
+              <br />
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <br />
+              <p>Coordinator</p>
+              <div class="con-flex">
+                <div>
+                  <img
+                    class="user-icon"
+                    src="https://via.placeholder.com/150"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="con-t">Name</p>
+                  <p class="con-t">98565 58965</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-3">
+          <div class="cont">
+            <div onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
+
+            <div class="card">
+              <div class="form">
+                <h1 class="card-title">Submit your entry🔥</h1>
+                <div class="form-item">
+                  <label for="name">Name</label> <br />
+                  <input type="text" name="name" />
+                </div>
+                <div class="form-item">
+                  <label for="email">E-Mail Addredd</label><br />
+                  <input type="email" name="email" />
+                </div>
+                <div class="form-item">
+                  <label for="phone">Mobile Number</label><br />
+                  <input type="text" name="phone" />
+                </div>
+                <div class="form-item">
+                  <label for="college">College</label><br />
+                  <input type="text" name="college" />
+                </div>
+                <div class="form-item">
+                  <label for="category">Category</label><br />
+                  <select id="category" name="cat">
+                    <option value="webdev">Web Development</option>
+                    <option value="graphics">Graphic Design</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <label for="url">Entry Url</label><br />
+                  <input type="text" name="url" />
+                </div>
+                <p class="card-content mt-no">
+                  Repo url if Web Dev or Google drive link containing the
+                  graphic files.
+                </p>
+                <div class="form-item">
+                  <button class="green-btn sd" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="center"> developed with ❤️ by <a href="http://gawds.in/">gawds</a></div>
+      <div class="center">
+        developed with ❤️ by <a class="f-link" href="http://gawds.in/">gawds</a>
+      </div>
     </footer>
-    <script src="https://kit.fontawesome.com/e19e904283.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
-        integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI=" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e19e904283.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI="
+      crossorigin="anonymous"
+    ></script>
     <!-- <script src="https://kit.fontawesome.com/e19e904283.js" crossorigin="anonymous"></script> -->
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
