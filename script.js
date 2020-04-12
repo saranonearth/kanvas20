@@ -1,15 +1,25 @@
 const Rellax = window.Rellax;
 
 var rellax = new Rellax(".rellax", {
-  speed: -2,
-  center: true,
-  wrapper: null,
-  round: true,
-  vertical: true,
-  horizontal: false,
-  breakpoints: [576, 768, 1201],
+    speed: -2,
+    center: true,
+    wrapper: null,
+    round: true,
+    vertical: true,
+    horizontal: false,
+    breakpoints: [576, 768, 1201],
 });
 
+const slack = document.querySelector(".slack");
+console.log(window.scrollY);
+
+window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 1000) {
+        slack.style.display = "none";
+    } else {
+        slack.style.display = "block";
+    }
+});
 //conditional rendering event data
 
 const gawds_button = document.querySelector("#gawds-logo");
@@ -50,30 +60,30 @@ window.scrollTo(0, 0);
 // });
 
 const back = () => {
-  main.style.display = "flex";
-  WD.style.display = "none";
-  events_heading.display = "block";
-  GD.style.display = "none";
-  SUB.style.display = "none";
+    main.style.display = "flex";
+    WD.style.display = "none";
+    events_heading.display = "block";
+    GD.style.display = "none";
+    SUB.style.display = "none";
 };
 
 var countDownDate = new Date("Apr 15, 2020 15:00:00").getTime();
 
 var x = setInterval(function () {
-  var now = new Date().getTime();
+    var now = new Date().getTime();
 
-  var distance = countDownDate - now;
+    var distance = countDownDate - now;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("timer").innerHTML =
-    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    document.getElementById("timer").innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "EXPIRED";
-  }
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+    }
 }, 1000);

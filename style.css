@@ -76,8 +76,7 @@ body {
 }
 
 .gawds-logo {
-  height: 40px;
-  width: 160px;
+  width: 120px;
 }
 
 .org-button {
@@ -174,6 +173,7 @@ body {
 .lid {
   width: 45%;
   margin-top: 90px;
+  z-index: 10 !important;
 }
 
 .red {
@@ -182,7 +182,7 @@ body {
 
 .content-text {
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Source Sans Pro;
 }
 
@@ -359,7 +359,72 @@ select {
   display: none;
 }
 
+.text-dec-none {
+  text-decoration: none;
+}
+
+.slack {
+  position: fixed;
+  z-index: 11 !important;
+  bottom: 20px;
+  right: 15px;
+  background: #05ddb9;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.12);
+  color: #0a004b;
+  font-size: 0.8em;
+  transition: 0.2s;
+}
+
+.flex-it {
+  display: flex;
+  flex-direction: row;
+}
+
+.center-v {
+  display: flex;
+  align-items: center;
+}
+
+.slack:hover {
+  background: #4bdbc3;
+  cursor: pointer;
+}
+
+.join-s {
+  margin-left: -8px;
+  text-decoration: none !important;
+  color: #0a004b;
+}
+
+.i-slack {
+  color: #0a004b !important;
+}
+
+.ft {
+  font-size: 0.8em;
+  width: 150px;
+}
+
+.f-link {
+  text-decoration: none;
+  color: #5366e0;
+}
+
+.content-text {
+  font-size: 1.3em;
+}
+
 @media (max-width: 800px) {
+  .join-s {
+    font-size: 0.8em;
+  }
+
+  .gawds-logo {
+    width: 90px;
+  }
+
   .white {
     font-size: 1em;
   }
@@ -475,6 +540,7 @@ select {
     border: #fd6c6c 55px solid;
     margin: 10px;
     top: 100%;
+    z-index: 0;
   }
 
   .cont {
@@ -508,5 +574,30 @@ select {
   .back {
     color: #0a004b;
     background-color: #38e4c7;
+  }
+
+  .ft {
+    font-size: 0.8em;
+    width: 150px;
+  }
+
+  .card {
+    padding: 30px;
+  }
+
+  .flex {
+    width: 90%;
+  }
+
+  .title2 {
+    font-size: 1.2em;
+  }
+
+  .content-text {
+    font-size: 0.9em;
+  }
+
+  .card-content {
+    font-size: 0.9em;
   }
 }
