@@ -13,8 +13,7 @@ dark blue - #0a004b
   src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"),
-    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black")
-      format("svg");
+    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black") format("svg");
 }
 
 * {
@@ -539,7 +538,7 @@ select {
     background: none;
     border: #fd6c6c 55px solid;
     margin: 10px;
-    top: 100%;
+    top: 120%;
     z-index: 0;
   }
 
