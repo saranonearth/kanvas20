@@ -32,13 +32,14 @@ gd_button.addEventListener('click', () => {
 })
 
 SUB_button.addEventListener('click', () => {
-    console.log(events_heading)
+    const form = document.querySelector('.form')
+    form.reset();
     main.style.display = 'none';
     GD.style.display = 'none';
     WD.style.display = 'none';
     SUB.style.display = 'block';
     events_heading.style.display = 'none'
-    console.log(window.screen.width * window.devicePixelRatio)
+
     if (window.screen.width * window.devicePixelRatio < 800) {
         window.scrollTo(600, 600);
     } else {
@@ -76,3 +77,59 @@ var x = setInterval(function () {
         document.getElementById("timer").innerHTML = "EXPIRED";
     }
 }, 1000);
+
+//firebaseconfig
+
+var firebaseConfig = {
+    apiKey: "AIzaSyDxZrjUTyrIJqONYJZ71_i6wIr6UKtdD6A",
+    authDomain: "kanvas-862ce.firebaseapp.com",
+    databaseURL: "https://kanvas-862ce.firebaseio.com",
+    projectId: "kanvas-862ce",
+    storageBucket: "kanvas-862ce.appspot.com",
+    messagingSenderId: "534176018661",
+    appId: "1:534176018661:web:5b40267b2a0f00c6dee40c",
+    measurementId: "G-J7BS9KG8YC",
+};
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+const db = firebase.firestore();
+
+// form submit
+
+const handleSubmit = () => {
+    const form = document.querySelector('.form')
+    const name = document.querySelector('#name').value;
+    const email = document.querySelector('#email').value;
+    const phone = document.querySelector('#phone').value;
+    const college = document.querySelector('#college').value;
+    const category = document.querySelector('#category').value;
+    const url = document.querySelector('#url').value;
+    const message = document.querySelector('.message')
+
+
+    if (!phone.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im)) {
+        message.innerHTML = "Invalid phone number."
+        return;
+    }
+
+    if (name && email && category && phone && college && url) {
+        console.log("All")
+        db.collection(`${category}`).doc().set({
+            name,
+            email,
+            phone,
+            college,
+            url
+        }).then((s) => {
+            console.log(s)
+            message.innerHTML = "Submitted"
+        }).catch((e) => {
+            console.log(e)
+            message.innerHTML = "Submission failed. Please try again."
+        })
+    } else {
+        message.innerHTML = "Form is not completely filled."
+    }
+    form.reset();
+
+}
