@@ -1,284 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanvas '20</title>
+    <!-- CDN -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <script type="text/javascript">
+      (function () {
+        var css = document.createElement("link");
+        css.href = "https://use.fontawesome.com/releases/v5.1.0/css/all.css";
+        css.rel = "stylesheet";
+        css.type = "text/css";
+        document.getElementsByTagName("head")[0].appendChild(css);
+      })();
+    </script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="Kanvas '20.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Kanvas</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/e19e904283.js"></script>
-  <link rel="stylesheet" href="./style.css">
-</head> 
-
-<body>
-  <div id="corner-logo"></div>
-  <a href="gawds.in"><img src="gawds.png" id="gawds-logo"></img></a>
-
-  <!-- <div id="circle1" class="circle"> -->
-    <!-- camera svg -->
-    <!-- <svg id="camera-svg" class="event-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <style type="text/css">
-        .p {
-          fill: #e84775;
-          stroke: #e84775;
-          stroke-width: 2;
-          stroke-miterlimit: 10;
-        }
-      </style>
-      <g>
-        <g>
-          <path class="p" d="M402,166c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.52,0,10-4.48,10-10S407.52,166,402,166z" />
-        </g>
-      </g>
-      <g>
-        <g>
-          <path class="p" d="M482,126H372.18l-31.706-63.413C335.357,52.356,325.075,46,313.64,46H198.36c-11.437,0-21.719,6.356-26.834,16.588
-        L139.82,126H120v-10c0-16.542-13.458-30-30-30H70c-16.542,0-30,13.458-30,30v10H30c-16.542,0-30,13.458-30,30
-        c0,27.175,0,269.429,0,280c0,16.542,13.458,30,30,30h452c16.542,0,30-13.458,30-30c0-27.175,0-269.429,0-280
-        C512,139.458,498.542,126,482,126z M189.415,71.532C191.121,68.12,194.548,66,198.36,66h115.28c3.812,0,7.24,2.12,8.946,5.532
-        L349.82,126H162.18L189.415,71.532z M60,116c0-5.514,4.486-10,10-10h20c5.514,0,10,4.486,10,10v10H60V116z M20,225.9h126.451
-        C133.161,246.661,126,270.992,126,296c0,25.01,7.162,49.243,20.45,70H20V225.9z M256,186c60.133,0,110,48.719,110,110
-        c0,61.212-49.797,110-110,110c-60.257,0-110-48.842-110-110C146,234.795,195.79,186,256,186z M492,436c0,5.514-4.486,10-10,10H30
-        c-5.514,0-10-4.486-10-10v-50h142.226c24.435,25.472,58.349,40,93.774,40c35.431,0,69.348-14.532,93.775-40H492V436z M492,366
-        H365.549C378.839,345.239,386,321.009,386,296c0-25.009-7.161-49.239-20.451-70H492V366z M492,206H349.774
-        c-24.434-25.472-58.348-40-93.774-40c-35.43,0-69.347,14.532-93.775,40H20v-50c0-5.514,4.486-10,10-10c9.081,0,437.942,0,452,0
-        c5.514,0,10,4.486,10,10V206z" />
-        </g>
-      </g>
-      <g>
-        <g>
-          <path class="p"
-            d="M286,86h-60c-5.523,0-10,4.477-10,10s4.477,10,10,10h60c5.522,0,10-4.477,10-10S291.522,86,286,86z" />
-        </g>
-      </g>
-      <g>
-        <g>
-          <path class="p"
-            d="M256,206c-49.626,0-90,40.374-90,90c0,49.626,40.374,90,90,90c49.626,0,90-40.374,90-90C346,246.374,305.626,206,256,206z
-          M256,366c-38.598,0-70-31.402-70-70c0-38.598,31.402-70,70-70s70,31.402,70,70C326,334.598,294.598,366,256,366z" />
-        </g>
-      </g>
-      <g>
-        <g>
-          <path class="p" d="M256,246c-27.57,0-50,22.43-50,50c0,5.523,4.477,10,10,10s10-4.477,10-10c0-16.542,13.458-30,30-30
-        c5.522,0,10-4.477,10-10S261.522,246,256,246z" />
-        </g>
-      </g>
-      <g>
-        <g>
-          <path class="p"
-            d="M462,166h-20c-5.522,0-10,4.477-10,10s4.478,10,10,10h20c5.522,0,10-4.477,10-10S467.522,166,462,166z" />
-        </g>
-      </g>
-    </svg>
-  </div> -->
-
-  <div id="circle2" class="circle">
-    <!-- web svg -->
-    <svg id="code-svg" class="event-icon" viewBox="0 -25 424 424" xmlns="http://www.w3.org/2000/svg">
-      <style type="text/css">
-        .q {
-          fill: #e84775;
-          stroke: #e84775;
-          stroke-width: 2;
-          stroke-miterlimit: 10;
-        }
-      </style>
-      <path class="q"
-        d="m167.289062 272.132812c-1.601562 0-3.214843-.550781-4.53125-1.671874l-45.296874-38.570313c-1.5625-1.332031-2.460938-3.277344-2.460938-5.332031 0-2.050782.902344-3.996094 2.460938-5.328125l45.296874-38.570313c2.941407-2.507812 7.359376-2.152344 9.867188.789063 2.503906 2.945312 2.152344 7.363281-.792969 9.867187l-39.035156 33.242188 39.035156 33.242187c2.945313 2.507813 3.296875 6.925781.792969 9.867188-1.386719 1.628906-3.355469 2.464843-5.335938 2.464843zm0 0" />
-      <path class="q"
-        d="m256.710938 272.132812c-1.980469 0-3.949219-.835937-5.332032-2.464843-2.507812-2.941407-2.152344-7.359375.789063-9.867188l39.035156-33.242187-39.035156-33.242188c-2.941407-2.503906-3.296875-6.921875-.789063-9.867187 2.503906-2.941407 6.925782-3.296875 9.863282-.789063l45.296874 38.570313c1.5625 1.332031 2.460938 3.277343 2.460938 5.328125 0 2.054687-.898438 4-2.460938 5.332031l-45.296874 38.570313c-1.316407 1.121093-2.929688 1.671874-4.53125 1.671874zm0 0" />
-      <path class="q"
-        d="m195.964844 301.0625c-.480469 0-.964844-.050781-1.453125-.152344-3.78125-.796875-6.203125-4.511718-5.40625-8.292968l28.230469-134.035157c.796874-3.78125 4.507812-6.203125 8.292968-5.40625 3.78125.796875 6.203125 4.507813 5.40625 8.292969l-28.230468 134.035156c-.695313 3.296875-3.601563 5.558594-6.839844 5.558594zm0 0" />
-      <path class="q"
-        d="m377 374.085938h-330c-25.914062 0-47-21.082032-47-47v-280.085938c0-25.914062 21.085938-47 47-47h330c25.914062 0 47 21.085938 47 47v280.085938c0 25.917968-21.085938 47-47 47zm-330-360.085938c-18.195312 0-33 14.804688-33 33v280.085938c0 18.195312 14.804688 33 33 33h330c18.195312 0 33-14.804688 33-33v-280.085938c0-18.195312-14.804688-33-33-33zm0 0" />
-      <path class="q"
-        d="m417 112.089844h-410c-3.867188 0-7-3.132813-7-7 0-3.863282 3.132812-7 7-7h410c3.867188 0 7 3.136718 7 7 0 3.867187-3.132812 7-7 7zm0 0" />
-      <path class="q"
-        d="m119.601562 78.59375c-12.210937 0-22.152343-9.941406-22.152343-22.152344 0-12.214844 9.941406-22.152344 22.152343-22.152344 12.214844 0 22.152344 9.9375 22.152344 22.152344 0 12.210938-9.9375 22.152344-22.152344 22.152344zm0-30.304688c-4.492187 0-8.152343 3.65625-8.152343 8.152344s3.660156 8.152344 8.152343 8.152344c4.496094 0 8.152344-3.65625 8.152344-8.152344s-3.65625-8.152344-8.152344-8.152344zm0 0" />
-      <path class="q"
-        d="m51.539062 78.378906c-12.214843 0-22.152343-9.9375-22.152343-22.152344 0-12.214843 9.9375-22.152343 22.152343-22.152343 12.214844 0 22.152344 9.9375 22.152344 22.152343 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304687c-4.492187 0-8.152343 3.660156-8.152343 8.152343 0 4.496094 3.660156 8.152344 8.152343 8.152344 4.496094 0 8.152344-3.65625 8.152344-8.152344 0-4.492187-3.65625-8.152343-8.152344-8.152343zm0 0" />
-      <path class="q"
-        d="m187.664062 78.804688c-12.210937 0-22.148437-9.9375-22.148437-22.152344 0-12.210938 9.9375-22.148438 22.148437-22.148438 12.214844 0 22.152344 9.9375 22.152344 22.148438 0 12.214844-9.9375 22.152344-22.152344 22.152344zm0-30.304688c-4.492187 0-8.148437 3.65625-8.148437 8.152344s3.65625 8.152344 8.148437 8.152344c4.496094 0 8.152344-3.65625 8.152344-8.152344s-3.65625-8.152344-8.152344-8.152344zm0 0" />
-    </svg>
-  </div>
-
-  <div id="circle3" class="circle">
-    <!-- design svg -->
-    <svg id="design-svg" class="event-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <style type="text/css">
-        .a {
-          fill: #e84775;
-          stroke: #e84775;
-          stroke-width: 2;
-          stroke-miterlimit: 10;
-        }
-      </style>
-      <path d="m316 346c-5.519531 0-10 4.480469-10 10s4.480469 10 10 10 10-4.480469 10-10-4.480469-10-10-10zm0 0" />
-      <path class="a"
-        d="m316 346c-5.519531 0-10 4.480469-10 10s4.480469 10 10 10 10-4.480469 10-10-4.480469-10-10-10zm0 0" />
-      <path class="a"
-        d="m462 0h-412c-27.570312 0-50 22.429688-50 50v306c0 27.570312 22.429688 50 50 50h156v46h-10c-13.351562 0-25.902344 5.203125-35.351562 14.648438-9.445313 9.449218-14.648438 22-14.648438 35.351562 0 5.523438 4.476562 10 10 10h200c5.523438 0 10-4.476562 10-10 0-27.570312-22.429688-50-50-50h-10v-46h156c27.570312 0 50-22.429688 50-50v-306c0-27.570312-22.429688-50-50-50zm-412 20h412c16.542969 0 30 13.457031 30 30v256h-46v-230c0-5.523438-4.476562-10-10-10h-80c-5.523438 0-10 4.476562-10 10v230h-50.054688c-.105468-10.34375-.375-20.539062-.804687-30.429688-1.75-40.726562-5.738281-68.007812-7.8125-80.007812 20.632813-15.191406 26.265625-43.347656 13.652344-65.222656l-34.660157-60.03125c-1.789062-3.09375-5.089843-5-8.660156-5-3.574218 0-6.875 1.90625-8.660156 5l-34.675781 60.035156c-11.890625 20.625-7.675781 47.339844 11.003906 63.105469-2.164063 11.964843-6.53125 40.222656-8.429687 82.101562-.449219 9.996094-.734376 20.199219-.84375 30.449219h-50.054688v-150c0-1.585938-.375-3.03125-.988281-4.316406-.027344-.050782-.042969-.105469-.066407-.15625l-40-80c-1.695312-3.386719-5.15625-5.527344-8.945312-5.527344s-7.25 2.140625-8.945312 5.527344l-40 80c-.023438.050781-.039063.105468-.0625.15625-.625 1.296875-.992188 2.765625-.992188 4.316406v150h-46v-256c0-16.542969 13.457031-30 30-30zm316 286v-220h60v20h-10c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h10v30h-10c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h10v30h-10c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h10v40h-10c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h10v20zm-108.339844-100.691406c3.632813 0 7.25-.417969 10.789063-1.199219 1.855469 11.894531 4.582031 32.941406 6.195312 61.890625h-37.222656c1.691406-28.929688 4.546875-50.304688 6.519531-62.601562 4.429688 1.261718 9.042969 1.910156 13.71875 1.910156zm0-20c-22.855468 0-37.59375-24.875-26.011718-44.96875l26.011718-45.03125 25.996094 45.027344c11.539062 20.011718-2.996094 44.972656-25.996094 44.972656zm-21.15625 100.691406h39.019532c.210937 6.570312.355468 13.253906.425781 20h-39.894531c.074218-6.703125.226562-13.386719.449218-20zm-110.503906 20v-140h20v140zm-40 0v-140h20v140zm6.179688-160 23.820312-47.640625 23.820312 47.640625zm252.105468 346h-176.582031c1.46875-4.167969 3.867187-7.988281 7.085937-11.210938 5.671876-5.667968 13.203126-8.789062 21.210938-8.789062h120c13.039062 0 24.160156 8.359375 28.285156 20zm-58.285156-40h-60v-46h60zm176-66h-412c-16.542969 0-30-13.457031-30-30v-30h472v30c0 16.542969-13.457031 30-30 30zm0 0" />
-      <path class="a"
-        d="m276 346h-60c-5.523438 0-10 4.476562-10 10s4.476562 10 10 10h60c5.523438 0 10-4.476562 10-10s-4.476562-10-10-10zm0 0" />
-    </svg>
-  </div>
-
-
-  <!-- close icons -->
-  <div class="close">
-    <span>&times;</span>
-  </div>
-
-  <div id="photography" class="event-details">
-    <h1 class="heading">Photographer In You</h1>
-    <div class="content">
-      <span style="font-style: italic">Keep your eyes open and your mind sharp,
-        because you don’t take a photograph, you make it.</span>
-      <br />
-      <br />
-      Themes: <br />
-      <ul>
-        <li>---</li>
-        <li>---</li>
-      </ul>
-      Submit your entries at <span>kanvas@gawds.in</span>
-      with your name, college name, email id and contact number.
-      <br />
-      <br />
-      Last Date of Submission: --th September, 2019.
-      <br />
+  <body>
+    <div class="slack animated zoomIn">
+      <a
+        class="text-dec-none"
+        href="https://kanvas20.slack.com/join/shared_invite/zt-dfyijily-UQgwE~qb8zgpVB8IPUokjQ"
+        target="_blank"
+      >
+        <div class="flex-it">
+          <div><i class="fab i-slack fa-slack"></i></div>
+          <div class="center-v">
+            <span class="join-s">Join our slack</span>
+          </div>
+        </div>
+      </a>
     </div>
-  </div>
+    <header class="indigo-head">
+      <div
+        class="animated zoomIn disk-1 rellax"
+        data-rellax-mobile-speed="2"
+        data-rellax-desktop-speed="-6"
+      ></div>
+      <div class="title-con">
+        <h1 class="title animated fadeIn rellax delay-3s" data-rellax-speed="2">
+          KANVAS <span class="red">'20</span>
+        </h1>
+        <p class="sub-text animated fadeIn delay-1s">An event by gawds</p>
+        <p class="sub-text-2 animated fadeIn delay-2s">
+          Registration starts in <span id="timer" class="red"></span>
+        </p>
+        <div class="social-icons animated fadeIn delay-4s">
+          <div>
+            <a href="https://github.com/gawdsnitkkr" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/gawdsnitkkr/" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/_gawds/" target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="disk-2"></div>
 
-  <div id="code" class="event-details">
-    <h1 class="heading">Web Design</h1>
-    <div class="content">
-      <span style="font-style: italic">'Design is not just what it looks like and feels like.
-        Design is how it works.' - Steve Jobs.</span>
-      <br />
-      <br />
-      Make a web-app of one of the following themes: <br />
-      <ul>
-        <li>---</li>
-        <li>---</li>
-      </ul>
-      Submit your zip-folder containing all the relevant files at <span>kanvas@gawds.in</span>
-      with your name, college name, email and contact number.
-      <br />
-      <br />
-      Last Date of Submission: --th September, 2019.
-      <br />
+        <div class="sub-content">
+          <div class="no-mobile lid"></div>
+          <div
+            class="lid rellax"
+            data-rellax-mobile-speed="5"
+            data-rellax-desktop-speed="7"
+          >
+            <h1 class="title2">What is <span class="red">Kanvas</span>?</h1>
+            <p class="content-text">
+              Bored of sitting at home during quarantine? Tired of being cooped
+              up and not being able to go out? We bring to you the perfect way
+              to use this spare time productively. GAWDS presents to you,
+              Kanvas'20, a platform for all you web and graphics geeks to
+              showcase your talents.<br /><br />
+              So let the gears in your brain churn and your creative juices flow
+              freely, and come up with something that will blow our minds!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+        <div class="line no-mobile"></div>
+      </div>
+      <nav class="nav-flex">
+        <div>
+          <a href="http://gawds.in" target="_blank"
+            ><img src="./gawds.png" class="gawds-logo"
+          /></a>
+        </div>
+        <div class="f1">
+          <div class="white animated fadeInLeft delay-1s">gawds/kanvas</div>
+          <div class="org-button animated zoomIn">+</div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="disk-3 rellax"
+      data-rellax-mobile-speed="-5"
+      data-rellax-desktop-speed="2"
+    ></div>
+    <div>
+      <img src="./bottom.png" class="bottom-img" alt="bottom-curve" />
     </div>
-  </div>
+    <main class="main">
+      <div
+        class="disk-4 rellax"
+        data-rellax-mobile-speed="-5"
+        data-rellax-desktop-speed="2"
+      ></div>
+      <h1 id="events" class="contract-title rellax" data-rellax-speed="1">
+        Events
+      </h1>
+      <div class="container">
+        <div class="flex">
+          <div class="con-1">
+            <div class="card">
+              <h1 class="card-title">Web Dev.</h1>
+              <p class="card-content">
+                "Intuitive Web Development is how we give users new
+                superpowers." - Jared Spool<br /><br />
+                Put your thinking caps on, and create a website that is usable
+                as well as aesthetically appealing. Participate in the Web
+                Development competition, and stand a chance to win exciting
+                prizes!
+              </p>
 
-  <div id="design" class="event-details">
-    <h1 class="heading">Designer In You</h1>
-    <div class="content">
-      <span style="font-style: italic">There are three responses to a piece of design - 
-        Yes, No and WOW!<br />WOW is the one to aim for.</span>
-      <br />
-      <br />
-      Kanvas brings to you the hunt for designer in you.
-      <br />
-      <br />
-      Make a poster with your creative minds depicting either of the following themes:
-      <br />
-      <ul>
-        <li>---</li>
-        <li>---</li>
-      </ul>
+              <p class="green-btn ft sd wd">
+                Theme Coming Soon.
+              </p>
+            </div>
+          </div>
+          <div class="con-1">
+            <div class="card">
+              <h1 class="card-title">Graphics Design.</h1>
+              <p class="card-content">
+                “Good design is all about making other designers feel like
+                idiots because that idea wasn’t theirs.” - Frank Chimero<br /><br />
+                It's time for you to put your skills to test and create a visual
+                masterpiece. Participate in the Graphic Design competition, and
+                stand a chance to win exciting prizes!
+              </p>
+              <div class="green-btn ft sd gd">
+                Theme Coming Soon.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="cont">
+            <div id="back1" onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
 
-      Submit your entries at <span>kanvas@gawds.in</span>
-      with your name, college name, email id and contact number.
-      <br />
-      <br />
-      Last Date of Submission: --th September, 2019.
-      <br />
-    </div>
-  </div>
+            <div class="card">
+              <h1 class="card-title">Lorem, ipsum dolor.</h1>
+              <p class="card-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                vero voluptates suscipit earum deleniti natus neque quae facere
+                aperiam iure, quasi adipisci repellendus ipsum quis nisi eos,
+                in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Aliquam dicta quis vitae rerum architecto
+                voluptatibus magni fugiat. Facere odio, error sunt ut delectus
+                culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Placeat omnis sit optio ab
+                voluptas consectetur error nemo repudiandae rerum voluptates? At
+                itaque ratione accusamus velit suscipit culpa, maxime dolore
+                sint.
+              </p>
+              <br />
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <br />
+              <p>Coordinator</p>
+              <div class="con-flex">
+                <div>
+                  <img
+                    class="user-icon"
+                    src="https://via.placeholder.com/150"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="con-t">Name</p>
+                  <p class="con-t">98565 58965</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-2">
+          <div class="cont">
+            <div id="back2" onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
 
+            <div class="card">
+              <h1 class="card-title">Lorem, ipsum dolor.</h1>
+              <p class="card-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                vero voluptates suscipit earum deleniti natus neque quae facere
+                aperiam iure, quasi adipisci repellendus ipsum quis nisi eos,
+                in, quos vel. Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Aliquam dicta quis vitae rerum architecto
+                voluptatibus magni fugiat. Facere odio, error sunt ut delectus
+                culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Placeat omnis sit optio ab
+                voluptas consectetur error nemo repudiandae rerum voluptates? At
+                itaque ratione accusamus velit suscipit culpa, maxime dolore
+                sint.
+              </p>
+              <br />
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+              <br />
+              <p>Coordinator</p>
+              <div class="con-flex">
+                <div>
+                  <img
+                    class="user-icon"
+                    src="https://via.placeholder.com/150"
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p class="con-t">Name</p>
+                  <p class="con-t">98565 58965</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-3">
+          <div class="cont">
+            <div onclick="back()" class="green-btn sd back">
+              ← Back
+            </div>
 
-  <!-- Title kanvas -->
-  <svg version="1.1"  id="title" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-    y="0px" viewBox="0 0 900 300" style="enable-background:new 0 0 900 300;" xml:space="preserve">
-    <style type="text/css">
-      .st0 {
-        fill: none;
-        stroke: #FFFFFF;
-        stroke-width: 2;
-        stroke-miterlimit: 10;
-      }
-    </style>
-    <g id="XMLID_1_">
-      <path id="XMLID_3_" class="st0 y" d="M64.8,163.6l-9.5,30v51.5H25.7V58.5h29.6v83.6h1.4l25.6-83.6h29.6l-25.1,86l27,100.6H85.3
-  		L64.8,163.6z" />
-      <path id="XMLID_5_" class="st0 y" d="M182.8,210h-27.4l-3.4,35.1h-28.8l19.9-186.6h52.1l20.1,186.6h-29L182.8,210z M180.4,185.1
-  		l-9.7-99.6h-3l-9.7,99.6H180.4z" />
-      <path id="XMLID_8_" class="st0 y" d="M228.3,58.5h38.5l25.6,137.9h1.8l-0.8-22.3V58.5H321v186.6h-38.3l-25.6-137.9h-2l0.8,22.3v115.6
-  		h-27.6V58.5z" />
-      <path id="XMLID_10_" class="st0 y" d="M362.7,58.5l15.6,159.6h3L397,58.5h29l-20.1,186.6h-52.1L333.9,58.5H362.7z" />
-      <path id="XMLID_12_" class="st0 y" d="M483.8,210h-27.4l-3.4,35.1h-28.8l19.9-186.6h52.1l20.1,186.6h-29L483.8,210z M481.4,185.1
-  		l-9.7-99.6h-3l-9.7,99.6H481.4z" />
-      <path id="XMLID_15_" class="st0 y"
-        d="M574.3,121.2v-27c0-9.7-4.5-12.6-10.1-12.6c-5.7,0-10.1,2.8-10.1,12.6v23.3
-  		c0,28.4,49.5,21.7,49.5,66.9v25.2c0,28-15.8,37.3-39.3,37.3c-23.5,0-39.1-9.3-39.1-37.3v-27.2h28.6v27c0,9.7,4.5,12.6,10.3,12.6
-  		s10.1-2.8,10.1-12.6v-23.3c0-28.4-49.3-21.7-49.3-66.9V94c0-28,15.8-37.3,39.1-37.3c23.5,0,38.9,9.3,38.9,37.3v27.2H574.3z" />
-      <path id="XMLID_17_" class="st0 y" d="M674.3,116.1h11v25.8h-34.3v-8.1c0-32.7,5.1-59,10.3-75.2h17.2
-  		C675.9,74,673.3,99.1,674.3,116.1z" />
-      <path id="XMLID_19_" class="st0 y" d="M730,205.6V220h50.5v25.1h-79.3v-41.6c0-46.4,50.5-50.3,50.5-81.9V94.4
-  		c0-9.7-4.7-12.6-10.1-12.6c-5.7,0-10.1,2.8-10.1,12.6v31h-29.8V94c0-28.2,16-37.3,40-37.3c23.7,0,40,9.1,40,37.3v30.4
-  		C781.6,168.1,730,171.5,730,205.6z" />
-      <path id="XMLID_21_" class="st0 y" d="M876.5,94.2v115.2c0,28.4-16.2,37.5-40,37.5c-23.5,0-40-9.1-40-37.5V94.2
-  		c0-28.4,16.4-37.5,40-37.5C860.2,56.7,876.5,65.8,876.5,94.2z M836.5,81.9c-5.5,0-10.1,2.8-10.1,12.6v114.8
-  		c0,9.7,4.7,12.6,10.1,12.6c5.7,0,10.1-2.8,10.1-12.6V94.4C846.7,84.7,842.2,81.9,836.5,81.9z" />
-    </g>
-  </svg>
-
-  
-  
-  <div id="main-content">
-  <p id="demo"></p>
-  </div>
- 
-
-  <div id="icon" class="social-icons">
-    <a href="https://facebook.com/gawdsnitkkr" target="_blank"><i id="icon1"
-        class="fab fa-facebook-f social-icon"></i></a><br />
-    <a href="https://instagram.com/_gawds/" target="_blank"><i id="icon2" class="fab fa-instagram social-icon"></i></a>
-  </div>
-  <script>
-    var countDownDate = new Date("Apr 15, 2020 15:00:00").getTime();
-
-  
-      var x = setInterval(function () {
-
-
-        var now = new Date().getTime();
-
-  
-        var distance = countDownDate - now;
-
-    
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-       
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-      }, 1000);
-  </script>
-  <script src="script.bundle.js"></script>
-</body>
-
+            <div class="card">
+              <div class="form">
+                <h1 class="card-title">Submit your entry🔥</h1>
+                <div class="form-item">
+                  <label for="name">Name</label> <br />
+                  <input type="text" name="name" />
+                </div>
+                <div class="form-item">
+                  <label for="email">E-Mail Addredd</label><br />
+                  <input type="email" name="email" />
+                </div>
+                <div class="form-item">
+                  <label for="phone">Mobile Number</label><br />
+                  <input type="text" name="phone" />
+                </div>
+                <div class="form-item">
+                  <label for="college">College</label><br />
+                  <input type="text" name="college" />
+                </div>
+                <div class="form-item">
+                  <label for="category">Category</label><br />
+                  <select id="category" name="cat">
+                    <option value="webdev">Web Development</option>
+                    <option value="graphics">Graphic Design</option>
+                  </select>
+                </div>
+                <div class="form-item">
+                  <label for="url">Entry Url</label><br />
+                  <input type="text" name="url" />
+                </div>
+                <p class="card-content mt-no">
+                  Repo url if Web Dev or Google drive link containing the
+                  graphic files.
+                </p>
+                <div class="form-item">
+                  <button class="green-btn sd" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="center">
+        developed with ❤️ by <a class="f-link" href="http://gawds.in/">gawds</a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e19e904283.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"
+      integrity="sha256-+xf9aJnHocnmrigq2hIDJGBSAnJdF5NH+Ooe5J2PHiI="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://kit.fontawesome.com/e19e904283.js" crossorigin="anonymous"></script> -->
+    <script src="./script.js"></script>
+  </body>
 </html>
