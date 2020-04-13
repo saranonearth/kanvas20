@@ -78,6 +78,16 @@ body {
   width: 120px;
 }
 
+.container2 {
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: rgb(168, 168, 168);
+  font-family: Source Sans Pro;
+}
+
+
 .org-button {
   color: white;
   background: #ff5d5d;
@@ -431,6 +441,10 @@ select {
 }
 
 @media (max-width: 800px) {
+  .container2 {
+    width: 90%;
+  }
+
   .join-s {
     font-size: 0.8em;
   }
@@ -553,7 +567,7 @@ select {
     background: none;
     border: #fd6c6c 55px solid;
     margin: 10px;
-    top: 120%;
+    top: 110%;
     z-index: 0;
   }
 

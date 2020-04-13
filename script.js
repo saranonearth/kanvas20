@@ -14,7 +14,7 @@ const slack = document.querySelector(".slack");
 console.log(window.scrollY);
 
 window.addEventListener("scroll", (e) => {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 2000) {
         slack.style.display = "none";
     } else {
         slack.style.display = "block";
