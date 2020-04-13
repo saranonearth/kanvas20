@@ -13,8 +13,7 @@ dark blue - #0a004b
   src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"),
     url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"),
-    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black")
-      format("svg");
+    url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black") format("svg");
 }
 
 * {
@@ -78,6 +77,16 @@ body {
 .gawds-logo {
   width: 120px;
 }
+
+.container2 {
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: rgb(168, 168, 168);
+  font-family: Source Sans Pro;
+}
+
 
 .org-button {
   color: white;
@@ -432,6 +441,10 @@ select {
 }
 
 @media (max-width: 800px) {
+  .container2 {
+    width: 90%;
+  }
+
   .join-s {
     font-size: 0.8em;
   }
@@ -554,7 +567,7 @@ select {
     background: none;
     border: #fd6c6c 55px solid;
     margin: 10px;
-    top: 100%;
+    top: 110%;
     z-index: 0;
   }
 
