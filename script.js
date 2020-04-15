@@ -14,7 +14,7 @@ const slack = document.querySelector(".slack");
 console.log(window.scrollY);
 
 window.addEventListener("scroll", (e) => {
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 2000) {
         slack.style.display = "none";
     } else {
         slack.style.display = "block";
@@ -69,7 +69,7 @@ const back = () => {
 
 var countDownDate = new Date("Apr 15, 2020 15:00:00").getTime();
 
-var x = setInterval(function () {
+var x = setInterval(function() {
     var now = new Date().getTime();
 
     var distance = countDownDate - now;
