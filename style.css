@@ -9,7 +9,6 @@ dark blue - #0a004b
 
 @font-face {
     font-family: "Mabry Pro Black";
-    src: url("./fonts/341e27032d2425bbb38e134289df92e8.eot");
     src: url("./fonts/341e27032d2425bbb38e134289df92e8.woff2") format("woff2"), url("./fonts/341e27032d2425bbb38e134289df92e8.woff") format("woff"), url("./fonts/341e27032d2425bbb38e134289df92e8.ttf") format("truetype"), url("./fonts/341e27032d2425bbb38e134289df92e8.svg#Mabry Pro Black") format("svg");
 }
 
@@ -301,7 +300,7 @@ body {
     color: white;
     width: auto;
     background: #05ddb9;
-    width: 200px;
+    width: 90px;
     margin-top: 50px;
     border-radius: 7px;
 }
@@ -423,7 +422,7 @@ select {
 
 .ft {
     font-size: 0.8em;
-    width: 150px;
+    width: 90px;
 }
 
 .f-link {
@@ -433,6 +432,10 @@ select {
 
 .content-text {
     font-size: 1.3em;
+}
+
+.blu {
+    color: #0a004b;
 }
 
 @media (max-width: 800px) {
@@ -538,6 +541,152 @@ select {
         border: #fd6c6c 55px solid;
         margin: 10px;
         top: 110%;
+        z-index: 0;
+    }
+    .cont {
+        width: 80%;
+    }
+    .flex-1 {
+        margin-top: -10px;
+    }
+    .flex-2 {
+        margin-top: -10px;
+    }
+    .back {
+        background: #05ddb9 !important;
+    }
+    .green-btn {
+        background: #05ddb9 !important;
+        width: 90px !important;
+    }
+    input {
+        width: 190px;
+    }
+    select {
+        width: 190px;
+    }
+    .back {
+        color: #0a004b;
+        background-color: #38e4c7;
+    }
+    .ft {
+        font-size: 0.8em;
+        width: 90px;
+    }
+    .card {
+        padding: 30px;
+    }
+    .flex {
+        width: 90%;
+    }
+    .title2 {
+        font-size: 1.2em;
+    }
+    .content-text {
+        font-size: 0.9em;
+    }
+    .card-content {
+        font-size: 0.9em;
+    }
+    .join-s {
+        font-size: 0.8em;
+    }
+    .gawds-logo {
+        width: 90px;
+    }
+    .white {
+        font-size: 1em;
+    }
+    .contract-title {
+        margin-top: 100px;
+    }
+    .indigo-head {
+        height: 120vh;
+    }
+    .bottom-img {
+        max-width: 300%;
+        margin-left: -100px;
+    }
+    .main {
+        margin-top: -100px;
+    }
+    .con-1 {
+        width: 100%;
+        margin: 0;
+    }
+    .con-2 {
+        width: 100%;
+        margin: 0;
+    }
+    .card {
+        margin-top: 20px;
+    }
+    .footer {
+        margin-top: 50px;
+    }
+    .lid {
+        margin-top: 80px;
+        width: 86%;
+        text-align: right;
+    }
+    .line {
+        width: 33%;
+    }
+    .no-mobile {
+        display: none;
+    }
+    .sub-text {
+        font-size: 1em;
+        margin-top: 0px;
+        margin-left: 2px;
+    }
+    .title {
+        font-size: 2.7em;
+    }
+    .disk-1 {
+        border: #ff5d5d 156px solid;
+        background-color: #ff5d5d;
+        margin: 0;
+        top: -9%;
+        left: -20%;
+    }
+    .content-text {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .sub-text-2 {
+        font-size: 1.2em;
+        margin: 0;
+    }
+    .title2 {
+        font-size: 1.5em;
+    }
+    .fab {
+        font-size: 1.2em;
+        margin-right: 9px;
+        margin-left: 0;
+    }
+    .disk-3 {
+        background: #ff5d5d;
+        border-color: #fd6c6c;
+        display: none;
+    }
+    .disk-2 {
+        bottom: -50%;
+        display: none;
+    }
+    .sub-text {
+        margin-top: -30px;
+    }
+    .disk-4 {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+        background: none;
+        border: #fd6c6c 55px solid;
+        margin: 10px;
+        top: 100%;
         z-index: 0;
     }
     .cont {

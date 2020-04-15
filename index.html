@@ -8,6 +8,9 @@
     <!-- CDN -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
     <script type="text/javascript">
         (function() {
             var css = document.createElement("link");
@@ -54,7 +57,7 @@
             </h1>
             <p class="sub-text animated fadeIn delay-1s">An event by gawds</p>
             <p class="sub-text-2 animated fadeIn delay-2s">
-                Event starts in <span id="timer"></span>
+                Event ends in <span id="timer"></span>
             </p>
             <div class="social-icons animated fadeIn delay-4s">
                 <div>
@@ -92,16 +95,16 @@
             <div class="line no-mobile"></div>
             <div class="line no-mobile"></div>
             <div class="line no-mobile"></div>
-        </div>
-        <nav class="nav-flex">
-            <div>
-                <a href="http://gawds.in" target="_blank"><img src="./gawds.png" class="gawds-logo" /></a>
-            </div>
-            <div class="f1">
-                <div class="white animated fadeInLeft delay-1s">gawds/kanvas</div>
-                <div class="org-button animated zoomIn">+</div>
-            </div>
-        </nav>
+
+            <nav class="nav-flex">
+                <div>
+                    <a href="http://gawds.in" target="_blank"><img src="./gawds.png" class="gawds-logo" /></a>
+                </div>
+                <div class="f1">
+                    <div class="white animated fadeInLeft delay-1s">submit</div>
+                    <div class="org-button animated zoomIn">+</div>
+                </div>
+            </nav>
     </header>
     <div class="disk-3 rellax" data-rellax-mobile-speed="-5" data-rellax-desktop-speed="2"></div>
     <div>
@@ -118,14 +121,14 @@
                 opted for Web Dev. make sure you share your Github repo link 🔗 right when you start working on it in the slack channel.<br />
                 <br /> 4. Once you are done, submit your entry here!👇<br />
                 <br /> 5. If you have opted for Web Dev. deploy your site on Github-Pages and provide the URL else a Google drive link containing all the graphic files.📁
-                <br /><br /> 6. Deadline - 20<sup>th</sup> April, 11.59PM (IST).⏰⏰<br /><br /> 7. Thats all! Keep your fingers crossed and wait for the results.🤞🤑🤑
+                <br /><br /> 6. Deadline - 22<sup>nd</sup> April, 11.59PM (IST).⏰⏰<br /><br /> 7. Thats all! Keep your fingers crossed and wait for the results.🤞🤑🤑
                 <br /><br /> 8. If you have any queries feel free to reach out to the coordinators or ping us on slack channel.📇 <br /><br />
 
                 <br />
                 <br /> Good Luck🙌
             </div>
         </div>
-        <h1 id="events" class="contract-title rellax" data-rellax-speed="1">
+        <h1 id="events" class="contract-title evt rellax" data-rellax-speed="1">
             Events
         </h1>
         <div class="container">
@@ -139,7 +142,7 @@
                         </p>
 
                         <p class="green-btn ft sd wd">
-                            Theme Coming Soon.
+                            More info.
                         </p>
                     </div>
                 </div>
@@ -151,7 +154,7 @@
                             Graphic Design competition, and stand a chance to win exciting prizes!
                         </p>
                         <div class="green-btn ft sd gd">
-                            Theme Coming Soon.
+                            More info.
                         </div>
                     </div>
                 </div>
@@ -163,25 +166,48 @@
                     </div>
 
                     <div class="card">
-                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
-                        <p class="card-content">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat. Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat omnis sit
-                            optio ab voluptas consectetur error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa, maxime dolore sint.
+                        <h1 class="card-title">Web Dev.</h1>
+                        <p class="blu">THEME : CREATE A DASHBOARD TO TRACK AND DISPLAY DATA ABOUT COVID-19</p>
+                        <br>
+
+                        <p class="blu">Rules and regulations:</p>
+                        <p class="card-content mt-no">
+
+                            1.The contest is open for both, students of NIT Kurukshetra and students of other colleges/universities.<br /> 2.Please submit your entries within the given timeline.<br /> 3.The content of the submission should be clearly
+                            based on the given theme, otherwise points may be deducted.<br /> 4.Plagiarism of any type will not be tolerated and will lead to immediate disqualification.
+                        </p>
+                        <br /><br />
+
+                        <p class="blu">
+                            Resources:
+                        </p>
+                        <p class="card-content mt-no">
+                            You can use https://covid-19-apis.postman.com/ APIs for India and host the dashboard or any other suitable alternative to visualize the data on github pages.
                         </p>
                         <br />
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="blu">Prizes:</p>
+                        <p class="card-content mt-no">1.INR 1.5K each for the winner.</p>
+                        <p class="card-content mt-no">2.Winner dashboard will be featured as gawds.in/covid-19</p>
+                        <p class="card-content mt-no">3.We at GAWDS will attempt to get contributions into the winning Web Development project to make it a full fledged dashboard.
+                        </p>
                         <br />
-                        <p>Coordinator</p>
+                        <p class="blu">Coordinators</p>
                         <div class="con-flex">
                             <div>
-                                <img class="user-icon" src="https://via.placeholder.com/150" alt="" />
+                                <img class="user-icon" src="https://avatars2.githubusercontent.com/u/32770347?s=400&u=822cf931891aa35e7ba2b1b83aa5f5ebea9a9c1e&v=4" alt="war-turtle" />
                             </div>
                             <div>
-                                <p class="con-t">Name</p>
-                                <p class="con-t">98565 58965</p>
+                                <p class="con-t">Kartik Yadav</p>
+                                <p class="con-t">+91 98962 47010</p>
+                            </div>
+                        </div>
+                        <div class="con-flex">
+                            <div>
+                                <img class="user-icon" src="https://avatars0.githubusercontent.com/u/33419668?s=460&u=1b145a27955d29ddffe512b53b2d71e388cd16b5&v=4" alt="prathamzx" />
+                            </div>
+                            <div>
+                                <p class="con-t">Pratham Agarwal</p>
+                                <p class="con-t">+91 82951 97406</p>
                             </div>
                         </div>
                     </div>
@@ -194,28 +220,50 @@
                     </div>
 
                     <div class="card">
-                        <h1 class="card-title">Lorem, ipsum dolor.</h1>
-                        <p class="card-content">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo vero voluptates suscipit earum deleniti natus neque quae facere aperiam iure, quasi adipisci repellendus ipsum quis nisi eos, in, quos vel. Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Aliquam dicta quis vitae rerum architecto voluptatibus magni fugiat. Facere odio, error sunt ut delectus culpa, fugit, ullam sed aut impedit id! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat omnis sit
-                            optio ab voluptas consectetur error nemo repudiandae rerum voluptates? At itaque ratione accusamus velit suscipit culpa, maxime dolore sint.
+                        <h1 class="card-title">Graphic Design.</h1>
+                        <p class="blu">THEME : ISOLATION</p>
+                        <br>
+
+                        <p class="blu">Rules and regulations:</p>
+                        <p class="card-content mt-no">
+
+                            1.The contest is open for both, students of NIT Kurukshetra and students of other colleges/universities.<br> 2.Please submit your entries between 15th-22nd April.<br> 3.The content of the submission should be clearly based
+                            on the given theme, otherwise points may be deducted.<br> 4.Plagiarism of any type will not be tolerated and will lead to immediate disqualification. <br> </p>
+                        <br /><br />
+
+                        <p class="blu">
+                            Specifications:
+                        </p>
+                        <p class="card-content mt-no">
+                            1.Submission format - JPEG<br> 2.Aspect ratio - 4:5<br> 3.Dot density - 300dpi<br> 4.The content should not be drawn by hand<br>
                         </p>
                         <br />
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
-                        <p class="card-content mt-no">- Lorem ipsum dolor sit amet.</p>
+                        <p class="blu">Prizes:</p>
+                        <p class="card-content mt-no">1.INR 1.5K each for the winner.</p>
+                        <p class="card-content mt-no">2.The winning graphics design entry will be posted on social media pages of GAWDS.</p>
+
                         <br />
-                        <p>Coordinator</p>
+                        <p class="blu">Coordinators</p>
                         <div class="con-flex">
                             <div>
-                                <img class="user-icon" src="https://via.placeholder.com/150" alt="" />
+                                <img class="user-icon" src="https://avatars0.githubusercontent.com/u/54904272?s=460&u=a5c12ad78e2c38d25bd963e219d7d5c9b9ecc7cc&v=4" alt="sage" />
                             </div>
                             <div>
-                                <p class="con-t">Name</p>
-                                <p class="con-t">98565 58965</p>
+                                <p class="con-t">Abhimanyu</p>
+                                <p class="con-t">+91 92057 47796</p>
+                            </div>
+                        </div>
+                        <div class="con-flex">
+                            <div>
+                                <img class="user-icon" src="https://avatars2.githubusercontent.com/u/38047251?s=460&u=5df7ccef6f4b4d52292e5606f98ba094c9723475&v=4" alt="kaushkay" />
+                            </div>
+                            <div>
+                                <p class="con-t">Kaushlendra Kumar Giri</p>
+                                <p class="con-t">+91 97177 97387</p>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="flex-3">
@@ -225,34 +273,34 @@
                     </div>
 
                     <div class="card">
-                        <div class="form">
+                        <form onsubmit="event.preventDefault(); handleSubmit();" class="form">
                             <h1 class="card-title">Submit your entry🔥</h1>
                             <div class="form-item">
                                 <label for="name">Name</label> <br />
-                                <input type="text" name="name" />
+                                <input type="text" id="name" name="name" />
                             </div>
                             <div class="form-item">
-                                <label for="email">E-Mail Addredd</label><br />
-                                <input type="email" name="email" />
+                                <label for="email">E-Mail Address</label><br />
+                                <input type="email" id="email" name="email" />
                             </div>
                             <div class="form-item">
                                 <label for="phone">Mobile Number</label><br />
-                                <input type="text" name="phone" />
+                                <input type="text" id="phone" name="phone" />
                             </div>
                             <div class="form-item">
                                 <label for="college">College</label><br />
-                                <input type="text" name="college" />
+                                <input type="text" id="college" name="college" />
                             </div>
                             <div class="form-item">
                                 <label for="category">Category</label><br />
                                 <select id="category" name="cat">
-                    <option value="webdev">Web Development</option>
-                    <option value="graphics">Graphic Design</option>
-                  </select>
+                              <option value="webdev">Web Development👨‍💻</option>
+                              <option value="graphics">Graphic Design🎨</option>
+                            </select>
                             </div>
                             <div class="form-item">
                                 <label for="url">Entry Url</label><br />
-                                <input type="text" name="url" />
+                                <input id="url" type="text" name="url" />
                             </div>
                             <p class="card-content mt-no">
                                 Repo url if Web Dev or Google drive link containing the graphic files.
@@ -260,7 +308,8 @@
                             <div class="form-item">
                                 <button class="green-btn sd" type="submit">Submit</button>
                             </div>
-                        </div>
+                            <p class="message"></p>
+                        </form>
                     </div>
                 </div>
             </div>
